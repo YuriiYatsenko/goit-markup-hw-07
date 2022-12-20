@@ -1,0 +1,38 @@
+.features {
+    display: flex;
+}
+
+.features__box:not(:first-child) {
+    margin-left: 30px;
+}
+
+.features__block {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: var(--fon-teamm);
+    margin-bottom: 30px;
+}
+
+.features__icon {
+    margin: 25px 100px;
+}
+
+
+
+.features__subtitle {
+    color: var(--title-text-color);
+    line-height: 1.7;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.features__title {
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
