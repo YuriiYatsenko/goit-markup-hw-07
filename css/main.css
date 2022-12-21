@@ -444,7 +444,7 @@ a {
   padding: 10px 52px;
   border: none;
   margin: auto;
-  transition-property: background-color;
+  transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
