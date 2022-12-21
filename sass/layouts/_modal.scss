@@ -65,7 +65,6 @@
     margin-bottom: 12px;
 }
 
-/*******FORM-MODAL*******/
 
 .modal__input {
     width: 100%;
@@ -82,12 +81,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__input:hover,
-.modal__input:focus,
-.modal__textarea:hover,
-.modal__textarea:focus {
-    border-color: var(--accent-color)
-}
+
 
 .modal__input:hover~svg,
 .modal__input:focus~svg {
@@ -107,26 +101,26 @@
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal__textarea::placeholder {
+    &:hover,
+    &:focus {
+    border-color: var(--accent-color)
+    }
+
+    &::placeholder {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.2;
     letter-spacing: 0.01em;
     color: var(--placeholder-color);
+    }
 }
+
 
 .modal__group {
     margin-bottom: 10px;
-}
 
-.modal__comment {
-    margin-bottom: 0;
-}
-
-.modal__group label,
-.modal__comment label {
+    & label {
     display: block;
     margin-bottom: 4px;
     font-size: 12px;
@@ -135,6 +129,12 @@
     text-align: left;
     color: var(--title-text-color);
 }
+}
+
+.modal__comment {
+    margin-bottom: 0;
+}
+
 
 .modal__icon {
     position: absolute;
@@ -151,9 +151,6 @@
 .modal__wrapper {
     position: relative;
 }
-
-/*******************************************/
-
 
 .modal__label {
     display: flex;
@@ -186,7 +183,6 @@
     background-position: center;
 }
 
-/*****************************************/
 
 .modal__contract {
     font-weight: 400;
@@ -196,13 +192,6 @@
     color: var(--modal-input-contract-color);
     text-decoration-line: underline;
     cursor: pointer;
-}
-
-.modal_submit:hover,
-.modal_submit:focus,
-.modal_submit:active {
-    background-color: var(--button-active);
-    box-shadow: 0 4px 4px var(--background-color-shadov);
 }
 
 .modal_submit {
@@ -226,4 +215,11 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus,
+    &:active {
+    background-color: var(--button-active);
+    box-shadow: 0 4px 4px var(--background-color-shadov);
+}
 }

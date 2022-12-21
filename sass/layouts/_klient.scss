@@ -24,6 +24,12 @@
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+}
 }
 
 .klient__link {
@@ -38,12 +44,10 @@
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.klient__link:hover,
-.klient__link:focus,
-.klient__items:hover,
-.klient__items:focus {
+    &:hover,
+    &:focus {
     fill: var(--accent-color);
     border-color: var(--accent-color);
+}
 }

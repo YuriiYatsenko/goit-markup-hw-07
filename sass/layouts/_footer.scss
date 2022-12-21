@@ -1,19 +1,22 @@
-footer {
+.footer {
     background-color: var(--background-color);
     padding-top: 56px;
     padding-bottom: 56px;
 }
 
-.footer__adress,
-.footer__contacts {
-    font-style: normal;
+.footer__box {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
 }
+
 
 .footer__adress {
     color: var(--title-primary-fon);
     line-height: 1.7;
     display: block;
     margin-bottom: 9px;
+    font-style: normal;
 }
 
 .footer__contacts {
@@ -23,6 +26,7 @@ footer {
     letter-spacing: 0.02em;
     margin-top: 0;
     margin-bottom: 0;
+    font-style: normal;
 }
 
 .footer__contacts li:not(:last-child) {
@@ -35,7 +39,6 @@ footer {
     line-height: 1.7;
 }
 
-/*****************logo-footer*********************/
 
 .foooter__logo {
     text-decoration: none;
@@ -53,13 +56,6 @@ footer {
     color: var(--title-primary-fon);
 }
 
-/**************************************************/
-
-.footer__box {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-}
 
 .footer__list {
     display: flex;
@@ -88,11 +84,11 @@ footer {
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer__link:hover,
-.footer__link:focus {
+    &__link:hover,
+    &__link:focus {
     background-color: var(--accent-color);
+}
 }
 
 
@@ -106,7 +102,6 @@ footer {
     display: inline-block
 }
 
-/***********************FOOTER-FORM*****************/
 
 .footer__form {
     display: flex;
@@ -125,25 +120,18 @@ footer {
     border-radius: 4px;
     outline: none;
     cursor: pointer;
-}
 
-.footer__input:focus,
-.footer__input:hover {
+    &:focus,
+    &:hover {
     color: var(--footer-placeholder-color);
-}
+    }
 
-.footer__input::placeholder {
+    &::placeholder {
     width: 47px;
     height: 20px;
     letter-spacing: 0.03em;
     color: var(--footer-placeholder-color);
 }
-
-
-.footer__button:hover,
-.footer__button:focus,
-.footer__button:active {
-    background-color: var(--button-active);
 }
 
 .footer__button {
@@ -169,6 +157,12 @@ footer {
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus,
+    &:active {
+    background-color: var(--button-active);
+    }
 }
 
 .footer__icon {
