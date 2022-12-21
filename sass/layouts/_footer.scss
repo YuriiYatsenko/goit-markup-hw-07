@@ -85,8 +85,8 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    &__link:hover,
-    &__link:focus {
+    &:hover,
+    &:focus {
     background-color: var(--accent-color);
 }
 }
