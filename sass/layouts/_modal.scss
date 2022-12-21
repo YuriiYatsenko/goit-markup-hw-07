@@ -50,12 +50,13 @@
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
-}
 
-.modal__button:hover,
-.modal__button:focus {
+    &:hover,
+    &:focus {
     fill: var(--accent-color);
 }
+}
+
 
 .modal__title {
     font-weight: 700;
@@ -79,14 +80,13 @@
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-
-
-.modal__input:hover~svg,
-.modal__input:focus~svg {
+    &:hover~svg,
+    &:focus~svg {
     fill: #188CE8;
 }
+}
+
 
 .modal__textarea {
     width: 100%;

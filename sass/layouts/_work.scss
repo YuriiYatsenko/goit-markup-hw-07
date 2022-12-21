@@ -2,9 +2,8 @@
     display: flex;
     gap: 30px;
     padding-inline-start: 0px;
-}
 
-.work__title {
+    &__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
@@ -13,7 +12,7 @@
     margin-bottom: 50px;
 }
 
-.work__name {
+    &__name {
     display: flex;
     color: var(--title-primary-fon);
     font-weight: 700;
@@ -25,13 +24,13 @@
     text-transform: uppercase;
 }
 
-.work__list {
+    &__list {
     position: relative;
     display: block;
 }
 
 
-.work__box {
+    &__box {
     position: absolute;
     display: flex;
     top: 76%;
@@ -42,3 +41,5 @@
     justify-content: center;
     background-color: var(--work-img-title-color);
 }
+}
+
